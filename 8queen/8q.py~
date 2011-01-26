@@ -1,0 +1,14 @@
+#!/usr/bin/python
+import sys, os
+
+class EightQueenProblem:
+    def __init__():
+        self.count = 8
+        self.solution = [0 for i in range(self.count)]
+    def print():
+        print "Solution: ", self.solution
+    def solove():
+        print()
+
+eqp = EightQueenProblem()
+eqp.solve()

@@ -1,0 +1,21 @@
+#!/usr/bin/python
+import sys, os, os.path
+
+def usage():
+    print("%s old.vcf chain_file new.vcf unlifted.vcf" % sys.argv[0] )
+
+def checkFileExist(fileName):
+    if (os.path.exists(fileName) != True):
+        print >> sys.stderr, fileName, "does not exists!"
+        sys.exit(1)
+if __name__ == '__main__':
+    if (len(sys.argv) != 5):
+        usage()
+        sys.exit(1)
+
+    oldVCFFilename, chainFileName, newVCFFileName, unliftedFileName = sys.argv[1:]
+    map(checkFileExist, [oldVCFFilename, chainFileName])
+
+    # convert VCF to BED format
+    
+

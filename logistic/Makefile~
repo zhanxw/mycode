@@ -1,0 +1,8 @@
+all: main
+LogisticRegression.o: LogisticRegression.cpp LogisticRegression.h
+	g++ -c $< -Ilibsrc
+main.o:	main.cpp
+	g++ -c $< -Ilibsrc
+main: main.o LogisticRegression.o
+	g++ -o main $^ libsrc/lib-goncalo.a -lz -lm
+

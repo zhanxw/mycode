@@ -1,0 +1,4 @@
+%module eg
+%{
+#include "test.h"
+    %}

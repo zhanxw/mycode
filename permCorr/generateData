@@ -1,0 +1,8 @@
+setwd(".")
+set.seed(0)
+X=rnorm(1000, mean=1)
+Y=rnorm(1000, mean=-3)
+
+options(digits=2)
+write.table(as.double(formatC(X)), "inputX", row.names=F, col.names=F)
+write.table(as.double(formatC(Y)), "inputY", row.names=F, col.names=F)

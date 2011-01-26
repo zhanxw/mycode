@@ -1,0 +1,13 @@
+#ifndef _DEBUG_H_
+#define _DEBUG_H_
+
+static enum DEBUG_LEVEL={SILENT = 0, INFO};
+static DEBUG_LEVEL debug = INFO;
+static DEBUG_LEVEL current_debug = INFO;
+
+#define PINT(x) print_int("##x", x)
+void print_int(const char* name, int value) {
+    if (
+
+
+#endif /* _DEBUG_H_ */

@@ -1,0 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+static int counter = 0;
+void inc(void) ;
+void prnt(void) ;

@@ -1,0 +1,12 @@
+#include "test.h"
+
+extern void print(void);
+extern void inc(void);
+int main() {
+    print();
+    inc();
+    print();
+    inc();
+    print();
+};
+

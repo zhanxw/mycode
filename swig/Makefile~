@@ -1,0 +1,3 @@
+all:
+	swig -python interface.i
+	cc -c -fPIC test.c
