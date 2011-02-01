@@ -1,0 +1,3 @@
+This swig folder demonstrate:
+1. Python using C modules with the help of SWIG
+2. two C modules (test.c, test2.c) using the variables with the same name

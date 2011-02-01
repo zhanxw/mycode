@@ -1,12 +1,19 @@
 #include "test.h"
+#include "test2.h"
 
-extern void prnt(void);
-extern void inc(void);
 int main() {
     prnt();
     inc();
     prnt();
     inc();
     prnt();
+    
+    t2_prnt();
+    t2_inc();
+    t2_prnt();
+    t2_inc();
+    t2_prnt();
+
+    return 0;
 };
 
