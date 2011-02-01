@@ -1,0 +1,18 @@
+using permutation to calculate the correlation between vector X and Y
+
+main.c: 
+algorithm 1: plain calculation
+algorithm 2: involve some optimization
+algorithm 3: base on alggorithm 2, using MKL library
+
+speed: algorithm 1 is slowest, algorithm 2 is 10% faster, algorithm 3 is 10% faster.
+
+pyCtypes.py:
+using ctypes module to call C functions, speed is comparable to native C program.
+
+perm_corr.py:
+using numpy, speed is magnitude slower (< 10x) than C.
+
+perm_corr.lua:
+using LuaJIT 2.0.0-beta 5. about 2x faster than the speed of Python, however, 
+it is still slower than C.

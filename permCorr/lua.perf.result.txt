@@ -1,0 +1,5 @@
+zhanxw@wonderland:~/mycode/permCorr> time ./per_corr.lua 50000 > /dev/null
+
+real    0m17.174s
+user    0m17.170s
+sys     0m0.000s

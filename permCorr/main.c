@@ -88,6 +88,7 @@ int vector_read(vec_p vec, const char* filename) {
         ret = fscanf(fp, "%s", temp);
         if (ret == EOF) break;
         PINT(vec->len);
+        errno = 0;
         vec->value[vec->len++] = strtod(temp, NULL);
         //vector_print(vec);
         if (errno != 0) {
@@ -164,12 +165,57 @@ void vector_corr_permutation(vec_p x, vec_p y,
     return ;
 }
 
+/**
+ * permutate Y, calculate the correlation between Y and X 
+ * store results in result
+ * NOTE: x, y content will be changed.
+ */
+#include "mkl.h"
+
+void mkl_vector_corr_permutation(vec_p x, vec_p y, 
+                               double* result, 
+                               unsigned int nPerm) {
+    double ret = 0.0;
+    assert(x->len == y->len && x->len > 0);
+    
+    double xmean = 0.0, ymean = 0.0;
+    for (int i = 0; i < x->len; i++){
+        xmean += x->value[i];
+        ymean += y->value[i];
+    }
+    xmean /= x->len;
+    ymean /= x->len;
+
+    /* vec_p temp; */
+    /* temp = vector_new (x->len); */
+
+    double xstd = 0.0, ystd = 0.0, xycov = 0.0;
+    double tempx, tempy;
+    for (int i = 0; i < x-> len; i++) {
+        
+        x->value[i] -= xmean;
+        y->value[i] -= ymean;
+    }
+    xstd = sqrt(cblas_dnrm2(x->len, x->value, 1));
+    ystd = sqrt(cblas_dnrm2(x->len, y->value, 1));
+
+    for (int n = 0; n < nPerm; n++ ) {
+        inplace_shuffle(y->value, y->len);
+        xycov = 0.0;
+        xycov = cblas_ddot(x->len, x->value, 1, y->value, 1);
+        result[n] = xycov / sqrt(xstd * ystd);
+    }
+    return ;
+}
+
 void usage(const char* prog) {
     fprintf(stderr, "%s shuffle_time input_X inputY\n", prog);
 }
 
 int main(int argc, char *argv[])
 {
+    //////////////////////////////////////////////////////////////////////
+    // Handel argument
     if (argc != 4) {
         usage(argv[0]);
         exit(1);
@@ -192,6 +238,7 @@ int main(int argc, char *argv[])
     double* ret = malloc(sizeof(double)*shuffle_time);
     assert(ret);
 
+    
     //////////////////////////////////////////////////////////////////////
     // Method 1
     // parallel this part
@@ -209,6 +256,15 @@ int main(int argc, char *argv[])
     vector_corr_permutation(x, y, ret, shuffle_time);
     timing_stop();
     timing_diff();
+
+    //////////////////////////////////////////////////////////////////////
+    // Method 3
+    timing_start();
+    mkl_vector_corr_permutation(x, y, ret, shuffle_time);
+    timing_stop();
+    timing_diff();
+
+
 
     exit(0);
     // output result

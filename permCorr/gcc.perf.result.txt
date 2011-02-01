@@ -1,0 +1,7 @@
+zhanxw@wonderland:~/mycode/permCorr> ./main 1000000 inputX inputY
+begin allocating memory:
+begin read:
+Elapsed time: 25.563894
+Elapsed time: 18.424873
+Elapsed time: 17.310188
+
