@@ -1,0 +1,477 @@
+                                                           The SAS System                        17:13 Friday, December 10, 2010   1
+
+                                      Obs     no       race      pheno    age    X0    X1    Y
+
+                                        1    2049    European    High      20     1     0    0
+                                        2    2057    European    Low       44     1     0    1
+                                        3    2060    European    High      46     1     0    0
+                                        4    2061    European    Low       36     1     0    1
+                                        5    2062    European    Low       50     1     0    1
+                                        6    2066    European    High      24     1     0    0
+                                        7    2067    European    High      50     1     0    0
+                                        8    2068    European    High      35     1     0    0
+                                        9    2070    European    High      38     1     0    0
+                                       10    2073    European    Low       53     1     0    1
+                                       11    2074    European    High      40     1     0    0
+                                       12    2075    European    High      34     1     0    0
+                                       13    2076    African     High      68     1     0    0
+                                       14    2077    African     High      47     1     0    0
+                                       15    2078    African     Low       64     1     0    1
+                                       16    2079    African     High      82     1     0    0
+                                       17    2081    African     Low       59     1     0    1
+                                       18    2082    African     High      54     1     0    0
+                                       19    2086    African     Low       37     1     0    1
+                                       20    2087    African     Low       73     1     0    1
+                                       21    2088    African     High      42     1     1    0
+                                       22    2089    African     High      60     1     0    0
+                                       23    2091    African     High      67     1     0    0
+                                       24    2092    African     Low       51     1     0    1
+                                       25    2095    African     Low       41     1     0    1
+                                       26    2096    African     High      54     1     0    0
+                                       27    2097    African     High      54     1     0    0
+                                       28    2100    African     High      58     1     0    0
+                                       29    2103    African     High      36     1     0    0
+                                       30    2104    African     High      33     1     1    0
+                                       31    2105    African     High      39     1     0    0
+                                       32    2107    African     Low       42     1     0    1
+                                       33    2110    African     High      46     1     0    0
+                                       34    2111    African     High      41     1     0    0
+                                       35    2113    African     High      30     1     0    0
+                                       36    2114    African     High      53     1     1    0
+                                       37    2120    African     High      66     1     0    0
+                                       38    2121    African     Low       57     1     0    1
+                                       39    2124    African     Low       72     1     0    1
+                                       40    2125    African     High      72     1     0    0
+                                       41    2126    African     Low       44     1     0    1
+                                       42    2130    African     Low       54     1     0    1
+                                       43    2133    African     Low       57     1     0    1
+                                       44    2134    African     Low       52     1     0    1
+                                       45    2137    African     Low       49     1     0    1
+                                       46    2140    African     Low       64     1     0    1
+                                       47    2142    African     High      38     1     0    0
+                                       48    2144    African     High      42     1     0    0
+                                       49    2145    African     High      61     1     0    0
+                                       50    2146    African     Low       59     1     0    1
+                                       51    2147    African     High      65     1     0    0
+                                       52    2148    African     Low       42     1     0    1
+                                       53    2152    African     High      56     1     0    0
+                                       54    2153    African     Low       60     1     0    1
+                                       55    2154    African     High      69     1     0    0
+                                       56    2155    African     Low       67     1     0    1
+                                                           The SAS System                        17:13 Friday, December 10, 2010   2
+
+                                      Obs     no       race      pheno    age    X0    X1    Y
+
+                                       57    2159    African     High      51     1     0    0
+                                       58    2160    African     Low       65     1     0    1
+                                       59    2161    African     High      55     1     0    0
+                                       60    2162    African     High      49     1     0    0
+                                       61    2163    African     Low       26     1     0    1
+                                       62    2168    European    Low       56     1     0    1
+                                       63    2169    European    Low       48     1     0    1
+                                       64    2170    European    High      51     1     0    0
+                                       65    2172    African     High      45     1     0    0
+                                       66    2176    European    Low       49     1     0    1
+                                       67    2187    European    High       .     1     0    0
+                                       68    2188    European    Low        .     1     0    1
+                                       69    2189    European    Low       60     1     0    1
+                                       70    2193    European    High      47     1     0    0
+                                       71    2194    European    High      57     1     0    0
+                                       72    2196    African     Low       50     1     0    1
+                                       73    2215    African     High       .     1     0    0
+                                       74    2216    European    Low       61     1     0    1
+                                       75    2218    African     Low       53     1     0    1
+                                       76    2219    African     High       .     1     0    0
+                                       77    2220    African     High      53     1     0    0
+                                       78    2222    European    Low       46     1     0    1
+                                       79    2223    European    High      53     1     0    0
+                                       80    2224    African     High       .     1     0    0
+                                       81    2225    European    Low        .     1     0    1
+                                       82    2226    European    Low        .     1     0    1
+                                       83    2227    European    High       .     1     0    0
+                                       84    2228    European    Low        .     1     0    1
+                                       85    2229    European    Low       58     1     0    1
+                                       86    2230    European    Low       49     1     0    1
+                                       87    2231    African     High      48     1     0    0
+                                       88    2232    African     Low       45     1     0    1
+                                       89    2233    European    High      46     1     0    0
+                                       90    2234    European    Low       48     1     0    1
+                                       91    2235    African     Low       58     1     0    1
+                                       92    2236    European    Low        .     1     0    1
+                                       93    2237    European    Low       54     1     0    1
+                                       94    2238    European    High      54     1     0    0
+                                       95    2239    African     Low       46     1     0    1
+                                       96    2240    European    Low        .     1     0    1
+                                       97    2241    European    Low       58     1     0    1
+                                       98    2242    African     High      48     1     0    0
+                                       99    2243    African     Low       62     1     0    1
+                                      100    2244    European    High      48     1     0    0
+                                      101    2245    European    High      48     1     0    0
+                                      102    2246    African     High      45     1     0    0
+                                      103    2247    European    High       .     1     0    0
+                                      104    2248    African     High      47     1     0    0
+                                      105    2249    European    High      60     1     0    0
+                                      106    2250    European    High       .     1     0    0
+                                      107    2251    African     High       .     1     0    0
+                                      108    2252    European    High      58     1     0    0
+                                      109    2253    African     High      48     1     0    0
+                                      110    2254    European    Low       54     1     0    1
+                                      111    2255    European    High      57     1     0    0
+                                      112    2256    European    Low       59     1     0    1
+                                                           The SAS System                        17:13 Friday, December 10, 2010   3
+
+                                      Obs     no       race      pheno    age    X0    X1    Y
+
+                                      113    2257    African     Low       48     1     0    1
+                                      114    2258    European    High      45     1     0    0
+                                      115    2261    European    Low       48     1     0    1
+                                      116    2262    African     High      49     1     0    0
+                                      117    2263    European    High      45     1     0    0
+                                      118    2265    African     Low       61     1     0    1
+                                      119    2267    African     Low       51     1     0    1
+                                      120    2280    European    High      61     1     0    0
+                                      121    2281    European    High      60     1     0    0
+                                      122    2282    European    Low       54     1     0    1
+                                      123    2283    European    Low       56     1     0    1
+                                      124    2284    European    High      48     1     0    0
+                                      125    2285    African     High       .     1     0    0
+                                      126    2286    African     Low       57     1     0    1
+                                      127    2287    European    Low       47     1     0    1
+                                      128    2288    African     Low       61     1     0    1
+                                      129    2289    European    High      50     1     0    0
+                                      130    2290    African     High      57     1     0    0
+                                      131    2291    European    Low       51     1     0    1
+                                      132    2292    European    Low       46     1     0    1
+                                      133    2294    European    Low        .     1     0    1
+                                      134    2295    African     Low       64     1     0    1
+                                      135    2296    African     High      46     1     0    0
+                                      136    2299    European    High       .     1     0    0
+                                      137    2300    European    High      51     1     0    0
+                                      138    2301    African     Low        .     1     0    1
+                                      139    2302    European    High      64     1     0    0
+                                      140    2303    European    Low       48     1     0    1
+                                      141    2306    European    High      47     1     0    0
+                                      142    2307    European    Low       46     1     0    1
+                                      143    2308    African     Low       50     1     0    1
+                                      144    2309    African     Low       58     1     0    1
+                                      145    2310    African     High      54     1     0    0
+                                      146    2311    European    Low        .     1     0    1
+                                      147    2312    European    Low       63     1     0    1
+                                      148    2313    European    High      55     1     0    0
+                                      149    2314    European    Low        .     1     0    1
+                                      150    2315    European    High      45     1     0    0
+                                      151    2316    African     Low       58     1     0    1
+                                      152    2318    European    Low        .     1     0    1
+                                      153    2319    European    Low       54     1     0    1
+                                      154    2322    European    Low        .     1     0    1
+                                      155    2323    European    High      53     1     0    0
+                                      156    2324    African     High      48     1     0    0
+                                      157    2325    African     Low        .     1     0    1
+                                      158    2326    European    Low       50     1     0    1
+                                      159    2329    African     High      47     1     0    0
+                                      160    2335    African     Low       48     1     0    1
+                                      161    2352    African     High       .     1     0    0
+                                      162    2353    European    Low        .     1     0    1
+                                      163    2354    European    High       .     1     0    0
+                                      164    2355    European    High      64     1     0    0
+                                      165    2356    African     High       .     1     0    0
+                                      166    2357    African     Low       59     1     0    1
+                                      167    2358    African     Low       56     1     0    1
+                                      168    2359    African     Low       58     1     0    1
+                                                           The SAS System                        17:13 Friday, December 10, 2010   4
+
+                                      Obs     no       race      pheno    age    X0    X1    Y
+
+                                      169    2361    African     Low       61     1     0    1
+                                      170    2362    European    Low       51     1     0    1
+                                      171    2363    European    Low        .     1     0    1
+                                      172    2364    European    Low       48     1     0    1
+                                      173    2365    European    High      60     1     0    0
+                                      174    2366    African     Low       54     1     0    1
+                                      175    2368    African     Low       49     1     0    1
+                                      176    2369    African     Low       45     1     0    1
+                                      177    2370    European    Low       48     1     0    1
+                                      178    2371    European    High       .     1     0    0
+                                      179    2372    European    High      51     1     0    0
+                                      180    2373    European    High      61     1     0    0
+                                      181    2374    African     High      45     1     0    0
+                                      182    2375    African     Low       46     1     0    1
+                                      183    2382    African     High      63     1     0    0
+                                      184    2385    African     High      51     1     0    0
+                                      185    2386    European    Low       51     1     0    1
+                                      186    2388    European    Low       52     1     0    1
+                                      187    2389    European    Low       52     1     0    1
+                                      188    2396    European    Low       62     1     0    1
+                                      189    2407    African     Low        .     1     0    1
+                                      190    2408    African     High      53     1     0    0
+                                      191    2409    African     High      57     1     0    0
+                                      192    2410    European    High      56     1     0    0
+                                      193    2411    European    High      46     1     0    0
+                                      194    2412    European    High       .     1     0    0
+                                      195    2413    European    Low       48     1     0    1
+                                      196    2414    African     High      57     1     0    0
+                                      197    2423    African     High      45     1     0    0
+                                      198    2508    European    Low       67     1     0    1
+                                      199    2509    European    Low       69     1     0    1
+                                      200    2510    European    Low       72     1     0    1
+                                      201    2511    European    Low       69     1     0    1
+                                      202    2514    African     Low       75     1     0    1
+                                                           The SAS System                        17:13 Friday, December 10, 2010   5
+
+                                                       The LOGISTIC Procedure
+
+                                                         Model Information
+
+                                           Data Set                      WORK.ALL        
+                                           Response Variable             Y               
+                                           Number of Response Levels     2               
+                                           Model                         binary logit    
+                                           Optimization Technique        Fisher's scoring
+
+
+                                              Number of Observations Read         202
+                                              Number of Observations Used         171
+
+
+                                                          Response Profile
+ 
+                                                 Ordered                      Total
+                                                   Value            Y     Frequency
+
+                                                       1            0            85
+                                                       2            1            86
+
+                                                    Probability modeled is Y=0.
+
+NOTE: 31 observations were deleted due to missing values for the response or explanatory variables.
+
+
+                                                      Class Level Information
+ 
+                                                                           Design
+                                                  Class     Value        Variables
+
+                                                  race      African              1
+                                                            European            -1
+
+
+                                                      Model Convergence Status
+
+                                         Quasi-complete separation of data points detected.       
+
+WARNING: The maximum likelihood estimate may not exist.
+WARNING: The LOGISTIC procedure continues in spite of the above warning. Results shown are based on the last maximum likelihood 
+         iteration. Validity of the model fit is questionable.
+
+
+                                                        Model Fit Statistics
+ 
+                                                                            Intercept
+                                                             Intercept            and
+                                               Criterion          Only     Covariates
+
+                                               AIC             239.050        236.862
+                                               SC              242.192        249.429
+                                               -2 Log L        237.050        228.862
+                                                           The SAS System                        17:13 Friday, December 10, 2010   6
+
+                                                       The LOGISTIC Procedure
+WARNING: The validity of the model fit is questionable.
+
+                                              Testing Global Null Hypothesis: BETA=0
+ 
+                                      Test                 Chi-Square       DF     Pr > ChiSq
+
+                                      Likelihood Ratio         8.1882        3         0.0423
+                                      Score                    6.9215        3         0.0744
+                                      Wald                     3.7753        3         0.2868
+
+
+                                                     Type 3 Analysis of Effects
+ 
+                                                                     Wald
+                                             Effect      DF    Chi-Square    Pr > ChiSq
+
+                                             X1           1        0.0004        0.9841
+                                             age          1        3.7408        0.0531
+                                             race         1        0.1557        0.6932
+
+
+                                              Analysis of Maximum Likelihood Estimates
+ 
+                                                                    Standard          Wald
+                            Parameter             DF    Estimate       Error    Chi-Square    Pr > ChiSq
+
+                            Intercept              1      1.6771      0.9065        3.4229        0.0643
+                            X1                     1     13.8873       695.1        0.0004        0.9841
+                            age                    1     -0.0329      0.0170        3.7408        0.0531
+                            race      African      1      0.0622      0.1576        0.1557        0.6932
+
+
+                                                        Odds Ratio Estimates
+                                                                  
+                                                                   Point          95% Wald
+                                    Effect                      Estimate      Confidence Limits
+
+                                    X1                          >999.999      <0.001    >999.999
+                                    age                            0.968       0.936       1.000
+                                    race African vs European       1.132       0.610       2.101
+
+
+                                   Association of Predicted Probabilities and Observed Responses
+
+                                         Percent Concordant     59.6    Somers' D    0.210
+                                         Percent Discordant     38.6    Gamma        0.214
+                                         Percent Tied            1.8    Tau-a        0.106
+                                         Pairs                  7310    c            0.605
+                                                           The SAS System                        17:13 Friday, December 10, 2010   7
+
+                                                       The LOGISTIC Procedure
+ 
+                                                     Exact Conditional Analysis
+
+                                                      Conditional Exact Tests
+ 
+                                                                            --- p-Value ---
+                                         Effect   Test          Statistic    Exact      Mid
+
+                                         X1       Score            2.0867   0.2630   0.1591
+                                                  Probability      0.2078   0.2630   0.1591
+
+
+                                                     Exact Parameter Estimates
+ 
+                                                         Standard       95% Confidence
+                               Parameter    Estimate        Error           Limits           p-Value
+
+                               X1             0.9950*           .     -1.2902    Infinity     0.4155
+
+                                           NOTE: * indicates a median unbiased estimate.
+
+
+                                                         Exact Odds Ratios
+ 
+                                                                  95% Confidence
+                                       Parameter   Estimate           Limits          p-Value
+
+                                       X1             2.705*      0.275   Infinity     0.4155
+
+                                           NOTE: * indicates a median unbiased estimate.
+                                                           The SAS System                        17:13 Friday, December 10, 2010   8
+
+                                                       The LOGISTIC Procedure
+
+                                                         Model Information
+
+                                           Data Set                      WORK.ALL        
+                                           Response Variable             Y               
+                                           Number of Response Levels     2               
+                                           Model                         binary logit    
+                                           Optimization Technique        Fisher's scoring
+
+
+                                              Number of Observations Read         202
+                                              Number of Observations Used         202
+
+
+                                                          Response Profile
+ 
+                                                 Ordered                      Total
+                                                   Value            Y     Frequency
+
+                                                       1            0           100
+                                                       2            1           102
+
+                                                    Probability modeled is Y=0.
+
+
+                                                      Model Convergence Status
+
+                                         Quasi-complete separation of data points detected.       
+
+WARNING: The maximum likelihood estimate may not exist.
+WARNING: The LOGISTIC procedure continues in spite of the above warning. Results shown are based on the last maximum likelihood 
+         iteration. Validity of the model fit is questionable.
+
+
+                                                        Model Fit Statistics
+ 
+                                                                            Intercept
+                                                             Intercept            and
+                                               Criterion          Only     Covariates
+
+                                               AIC             282.012        279.747
+                                               SC              285.320        286.363
+                                               -2 Log L        280.012        275.747
+
+
+                                              Testing Global Null Hypothesis: BETA=0
+ 
+                                      Test                 Chi-Square       DF     Pr > ChiSq
+
+                                      Likelihood Ratio         4.2647        1         0.0389
+                                      Score                    3.1061        1         0.0780
+                                      Wald                     0.0004        1         0.9838
+
+
+                                                           The SAS System                        17:13 Friday, December 10, 2010   9
+
+                                                       The LOGISTIC Procedure
+WARNING: The validity of the model fit is questionable.
+
+                                             Analysis of Maximum Likelihood Estimates
+ 
+                                                               Standard          Wald
+                                Parameter    DF    Estimate       Error    Chi-Square    Pr > ChiSq
+
+                                Intercept     1     -0.0503      0.1418        0.1256        0.7230
+                                X1            1     14.2533       700.8        0.0004        0.9838
+
+
+                                                        Odds Ratio Estimates
+                                                                  
+                                                          Point          95% Wald
+                                             Effect    Estimate      Confidence Limits
+
+                                             X1        >999.999      <0.001    >999.999
+
+
+                                   Association of Predicted Probabilities and Observed Responses
+
+                                         Percent Concordant      3.0    Somers' D    0.030
+                                         Percent Discordant      0.0    Gamma        1.000
+                                         Percent Tied           97.0    Tau-a        0.015
+                                         Pairs                 10200    c            0.515
+                                                           The SAS System                        17:13 Friday, December 10, 2010  10
+
+                                                       The LOGISTIC Procedure
+ 
+                                                     Exact Conditional Analysis
+
+                                                      Conditional Exact Tests
+ 
+                                                                            --- p-Value ---
+                                         Effect   Test          Statistic    Exact      Mid
+
+                                         X1       Score            3.0908   0.1195   0.0597
+                                                  Probability      0.1195   0.1195   0.0597
+
+
+                                                     Exact Parameter Estimates
+ 
+                                                         Standard       95% Confidence
+                               Parameter    Estimate        Error           Limits           p-Value
+
+                               X1             1.3833*           .     -0.8579    Infinity     0.2390
+
+                                           NOTE: * indicates a median unbiased estimate.
+
+
+                                                         Exact Odds Ratios
+ 
+                                                                  95% Confidence
+                                       Parameter   Estimate           Limits          p-Value
+
+                                       X1             3.988*      0.424   Infinity     0.2390
+
+                                           NOTE: * indicates a median unbiased estimate.

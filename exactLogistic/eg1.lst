@@ -1,0 +1,137 @@
+                                                           The SAS System                       03:55 Tuesday, February 15, 2011   1
+
+                                                       The LOGISTIC Procedure
+
+                                                         Model Information
+
+                                          Data Set                       WORK.DOSE       
+                                          Response Variable (Events)     Deaths          
+                                          Response Variable (Trials)     Total           
+                                          Model                          binary logit    
+                                          Optimization Technique         Fisher's scoring
+
+
+                                              Number of Observations Read           6
+                                              Number of Observations Used           6
+                                              Sum of Frequencies Read              18
+                                              Sum of Frequencies Used              18
+
+
+                                                          Response Profile
+ 
+                                                 Ordered     Binary           Total
+                                                   Value     Outcome      Frequency
+
+                                                       1     Event                3
+                                                       2     Nonevent            15
+
+
+                                                      Model Convergence Status
+
+                                           Convergence criterion (GCONV=1E-8) satisfied.          
+
+
+                                                        Model Fit Statistics
+ 
+                                                                            Intercept
+                                                             Intercept            and
+                                               Criterion          Only     Covariates
+
+                                               AIC              18.220         12.072
+                                               SC               19.111         13.853
+                                               -2 Log L         16.220          8.072
+
+
+                                              Testing Global Null Hypothesis: BETA=0
+ 
+                                      Test                 Chi-Square       DF     Pr > ChiSq
+
+                                      Likelihood Ratio         8.1478        1         0.0043
+                                      Score                    5.7943        1         0.0161
+                                      Wald                     2.7249        1         0.0988
+
+
+                                                           The SAS System                       03:55 Tuesday, February 15, 2011   2
+
+                                                       The LOGISTIC Procedure
+
+                                             Analysis of Maximum Likelihood Estimates
+ 
+                                                               Standard          Wald
+                                Parameter    DF    Estimate       Error    Chi-Square    Pr > ChiSq
+
+                                Intercept     1     -9.4745      5.5677        2.8958        0.0888
+                                Dose          1      2.0804      1.2603        2.7249        0.0988
+
+
+                                                        Odds Ratio Estimates
+                                                                  
+                                                          Point          95% Wald
+                                             Effect    Estimate      Confidence Limits
+
+                                             Dose         8.007       0.677      94.679
+
+
+                                   Association of Predicted Probabilities and Observed Responses
+
+                                         Percent Concordant     88.9    Somers' D    0.867
+                                         Percent Discordant      2.2    Gamma        0.951
+                                         Percent Tied            8.9    Tau-a        0.255
+                                         Pairs                    45    c            0.933
+                                                           The SAS System                       03:55 Tuesday, February 15, 2011   3
+
+                                                       The LOGISTIC Procedure
+ 
+                                                     Exact Conditional Analysis
+
+                                                       Sufficient Statistics
+ 
+                                                        Parameter     Value
+
+                                                        Intercept         3
+                                                        Dose             14
+
+
+                                                      Conditional Exact Tests
+ 
+                                                                            --- p-Value ---
+                                         Effect   Test          Statistic    Exact      Mid
+
+                                         Dose     Score            5.4724   0.0245   0.0190
+                                                  Probability      0.0110   0.0245   0.0190
+
+
+                                                     Exact Parameter Estimates
+ 
+                                                         Standard       95% Confidence
+                                Parameter    Estimate       Error           Limits           p-Value
+
+                                Dose           1.8000      1.0784      0.1157      5.8665     0.0245
+
+
+                                                         Exact Odds Ratios
+ 
+                                                                 95% Confidence
+                                       Parameter   Estimate          Limits          p-Value
+
+                                       Dose           6.049      1.123    353.000     0.0245
+                                                           The SAS System                       03:55 Tuesday, February 15, 2011   4
+
+                                             Obs    Dose    Count     Score       Prob
+
+                                               1      0        1     7.28571    0.00123
+                                               2      1        9     5.47238    0.01103
+                                               3      2       18     3.91810    0.02206
+                                               4      3       37     2.62286    0.04534
+                                               5      4       54     1.58667    0.06618
+                                               6      5       81     0.80952    0.09926
+                                               7      6      100     0.29143    0.12255
+                                               8      7      108     0.03238    0.13235
+                                               9      8      108     0.03238    0.13235
+                                              10      9      100     0.29143    0.12255
+                                              11     10       81     0.80952    0.09926
+                                              12     11       54     1.58667    0.06618
+                                              13     12       37     2.62286    0.04534
+                                              14     13       18     3.91810    0.02206
+                                              15     14        9     5.47238    0.01103
+                                              16     15        1     7.28571    0.00123

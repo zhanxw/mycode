@@ -1,0 +1,127 @@
+                                                           The SAS System                       11:06 Tuesday, February 15, 2011   1
+
+                                                       The LOGISTIC Procedure
+
+                                                         Model Information
+
+                                           Data Set                      WORK.EXAMPLE    
+                                           Response Variable             Y               
+                                           Number of Response Levels     2               
+                                           Model                         binary logit    
+                                           Optimization Technique        Fisher's scoring
+
+
+                                              Number of Observations Read         202
+                                              Number of Observations Used         202
+
+
+                                                          Response Profile
+ 
+                                                 Ordered                      Total
+                                                   Value            Y     Frequency
+
+                                                       1            0           100
+                                                       2            1           102
+
+                                                    Probability modeled is Y=0.
+
+
+                                                      Model Convergence Status
+
+                                           Convergence criterion (GCONV=1E-8) satisfied.          
+
+
+                                                        Model Fit Statistics
+ 
+                                                                            Intercept
+                                                             Intercept            and
+                                               Criterion          Only     Covariates
+
+                                               AIC             282.012        282.600
+                                               SC              285.320        289.217
+                                               -2 Log L        280.012        278.600
+
+
+                                              Testing Global Null Hypothesis: BETA=0
+ 
+                                      Test                 Chi-Square       DF     Pr > ChiSq
+
+                                      Likelihood Ratio         1.4113        1         0.2348
+                                      Score                    1.0251        1         0.3113
+                                      Wald                     0.0001        1         0.9906
+
+
+                                                           The SAS System                       11:06 Tuesday, February 15, 2011   2
+
+                                                       The LOGISTIC Procedure
+
+                                             Analysis of Maximum Likelihood Estimates
+ 
+                                                               Standard          Wald
+                                Parameter    DF    Estimate       Error    Chi-Square    Pr > ChiSq
+
+                                Intercept     1     -0.0299      0.1411        0.0448        0.8324
+                                X1            1     14.2329      1213.8        0.0001        0.9906
+
+
+                                                        Odds Ratio Estimates
+                                                                  
+                                                          Point          95% Wald
+                                             Effect    Estimate      Confidence Limits
+
+                                             X1        >999.999      <0.001    >999.999
+
+
+                                   Association of Predicted Probabilities and Observed Responses
+
+                                         Percent Concordant      1.0    Somers' D    0.010
+                                         Percent Discordant      0.0    Gamma        1.000
+                                         Percent Tied           99.0    Tau-a        0.005
+                                         Pairs                 10200    c            0.505
+                                                           The SAS System                       11:06 Tuesday, February 15, 2011   3
+
+                                                       The LOGISTIC Procedure
+ 
+                                                     Exact Conditional Analysis
+
+                                                       Sufficient Statistics
+ 
+                                                        Parameter     Value
+
+                                                        Intercept       100
+                                                        X1                1
+
+
+                                                      Conditional Exact Tests
+ 
+                                                                            --- p-Value ---
+                                         Effect   Test          Statistic    Exact      Mid
+
+                                         X1       Score            1.0200   0.4950   0.2475
+                                                  Probability      0.4950   0.4950   0.2475
+
+
+                                                     Exact Parameter Estimates
+ 
+                                                         Standard       95% Confidence
+                               Parameter    Estimate        Error           Limits           p-Value
+
+                               X1             0.0198*           .     -3.6438    Infinity     0.9901
+
+                                           NOTE: * indicates a median unbiased estimate.
+
+
+                                                         Exact Odds Ratios
+ 
+                                                                  95% Confidence
+                                       Parameter   Estimate           Limits          p-Value
+
+                                       X1             1.020*      0.026   Infinity     0.9901
+
+                                           NOTE: * indicates a median unbiased estimate.
+                                                           The SAS System                       11:06 Tuesday, February 15, 2011   4
+
+                                            Obs    X1      Count       Score       Prob
+
+                                             1      0     1.802E59    0.98039    0.50495
+                                             2      1    1.7667E59    1.02000    0.49505
