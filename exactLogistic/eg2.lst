@@ -1,0 +1,123 @@
+                                                           The SAS System                        08:14 Monday, February 14, 2011   1
+
+                                                       The LOGISTIC Procedure
+
+                                                         Model Information
+
+                                           Data Set                      WORK.DOSE       
+                                           Response Variable             y               
+                                           Number of Response Levels     2               
+                                           Model                         binary logit    
+                                           Optimization Technique        Fisher's scoring
+
+
+                                              Number of Observations Read           4
+                                              Number of Observations Used           4
+
+
+                                                          Response Profile
+ 
+                                                 Ordered                      Total
+                                                   Value            y     Frequency
+
+                                                       1            1             2
+                                                       2            0             2
+
+                                                    Probability modeled is y=1.
+
+
+                                                      Model Convergence Status
+
+                                         Quasi-complete separation of data points detected.       
+
+WARNING: The maximum likelihood estimate may not exist.
+WARNING: The LOGISTIC procedure continues in spite of the above warning. Results shown are based on the last maximum likelihood 
+         iteration. Validity of the model fit is questionable.
+
+
+                                                        Model Fit Statistics
+ 
+                                                                            Intercept
+                                                             Intercept            and
+                                               Criterion          Only     Covariates
+
+                                               AIC               7.545          6.773
+                                               SC                6.931          5.545
+                                               -2 Log L          5.545          2.773
+
+
+                                              Testing Global Null Hypothesis: BETA=0
+ 
+                                      Test                 Chi-Square       DF     Pr > ChiSq
+
+                                      Likelihood Ratio         2.7724        1         0.0959
+                                      Score                    2.0000        1         0.1573
+                                      Wald                     0.0077        1         0.9300
+
+
+NOTE: The following parameters have been set to 0, since the variables are a linear combination of other variables as shown.
+                                                           The SAS System                        08:14 Monday, February 14, 2011   2
+
+                                                       The LOGISTIC Procedure
+WARNING: The validity of the model fit is questionable.
+
+                                                          x0 =  Intercept
+
+
+                                             Analysis of Maximum Likelihood Estimates
+ 
+                                                               Standard          Wald
+                                Parameter    DF    Estimate       Error    Chi-Square    Pr > ChiSq
+
+                                Intercept     1     10.2028       116.2        0.0077        0.9300
+                                x0            0           0           .         .             .    
+                                x1            1    -10.2028       116.1        0.0077        0.9300
+
+
+                                                        Odds Ratio Estimates
+                                                                  
+                                                          Point          95% Wald
+                                             Effect    Estimate      Confidence Limits
+
+                                             x1          <0.001      <0.001    >999.999
+
+
+                                   Association of Predicted Probabilities and Observed Responses
+
+                                         Percent Concordant     75.0    Somers' D    0.750
+                                         Percent Discordant      0.0    Gamma        1.000
+                                         Percent Tied           25.0    Tau-a        0.500
+                                         Pairs                     4    c            0.875
+                                                           The SAS System                        08:14 Monday, February 14, 2011   3
+
+                                                       The LOGISTIC Procedure
+ 
+                                                     Exact Conditional Analysis
+
+                                                Conditional Exact Tests for 'Exact2'
+ 
+                                                                            --- p-Value ---
+                                         Effect   Test          Statistic    Exact      Mid
+
+                                         x1       Score            1.5000   0.6667   0.5000
+                                                  Probability      0.3333   1.0000   0.8333
+
+
+                                              Exact Parameter Estimates for 'Exact2'
+ 
+                                                         Standard       95% Confidence
+                               Parameter    Estimate        Error           Limits           p-Value
+
+                               x1            -0.4812*           .   -Infinity      1.7518     0.6667
+
+                                           NOTE: * indicates a median unbiased estimate.
+
+
+                                                   Exact Odds Ratios for 'Exact2'
+ 
+                                                                  95% Confidence
+                                       Parameter   Estimate           Limits          p-Value
+
+                                       x1             0.618*          0      5.765     0.6667
+
+                                           NOTE: * indicates a median unbiased estimate.
