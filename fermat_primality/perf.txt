@@ -1,0 +1,11 @@
+zhanxw@wonderland:~/mycode/fermat_primality> time ./main.omp 50000 >/dev/null
+
+real    2m21.340s
+user    5m9.400s
+sys     0m0.260s
+
+zhanxw@wonderland:~/mycode/fermat_primality> time ./main 50000 >/dev/null
+
+real    5m9.652s
+user    5m9.040s
+sys     0m0.570s
