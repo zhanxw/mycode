@@ -32,6 +32,13 @@ int main(int argc, char *argv[])
     }
     now = time(0);
     printf("Finsihed analysis at %s \n", ctime(&now));
+
+    LogisticRegressionScoreTest lrst;
+    int Xcol = 1;
+    lrst.FitLogisticModel(X,Y,Xcol,100);
+    printf("score p-value is: %lf \n", lrst.getPvalue());
+    Vector& pvalue = lr.GetAsyPvalue();
+    printf("wald p-value is: %lf \n", pvalue[Xcol]);
     return 0;
 }
 

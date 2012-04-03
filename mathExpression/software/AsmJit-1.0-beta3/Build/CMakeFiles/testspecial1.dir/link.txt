@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/testspecial1.dir/Test/testspecial1.cpp.o  -o testspecial1 -rdynamic -lpthread libAsmJit.so -lpthread -Wl,-rpath,/net/fantasia/home/zhanxw/mycode/mathExpression/software/AsmJit-1.0-beta3/Build 

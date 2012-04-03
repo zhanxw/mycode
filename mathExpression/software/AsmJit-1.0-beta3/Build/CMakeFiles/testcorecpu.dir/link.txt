@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/testcorecpu.dir/Test/testcorecpu.cpp.o  -o testcorecpu -rdynamic -lpthread libAsmJit.so -lpthread -Wl,-rpath,/net/fantasia/home/zhanxw/mycode/mathExpression/software/AsmJit-1.0-beta3/Build 

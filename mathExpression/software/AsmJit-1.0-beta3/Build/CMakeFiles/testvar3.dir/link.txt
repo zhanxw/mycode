@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/testvar3.dir/Test/testvar3.cpp.o  -o testvar3 -rdynamic -lpthread libAsmJit.so -lpthread -Wl,-rpath,/net/fantasia/home/zhanxw/mycode/mathExpression/software/AsmJit-1.0-beta3/Build 

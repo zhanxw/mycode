@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/87/trunk/doc/custom
+END
+footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/6/trunk/doc/custom/footer.html
+END
+Main.txt
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/87/trunk/doc/custom/Main.txt
+END
+list_expr_var.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/6/trunk/doc/custom/list_expr_var.cpp
+END
+calc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/6/trunk/doc/custom/calc.cpp
+END
+listvar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/6/trunk/doc/custom/listvar.cpp
+END
+example.txt
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/6/trunk/doc/custom/example.txt
+END
+features.txt
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/6/trunk/doc/custom/features.txt
+END

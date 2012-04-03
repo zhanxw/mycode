@@ -3,11 +3,13 @@
 #include <iostream>
 #include <ctime>
 
+#include "InputFile.h"
+#include "StringArray.h"
 #include "MathMatrix.h"
 #include "MathVector.h"
 #include "ExactLogisticRegression.h"
-#include "LogisticRegression.h"
-#include "InputFile.h"
+// #include "LogisticRegression.h"
+// #include "InputFile.h"
 
 int loadMatrix(Matrix& a, String& fileName);
 int loadVector(Vector& a, String& fileName);

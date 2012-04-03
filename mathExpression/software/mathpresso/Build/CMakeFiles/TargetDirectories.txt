@@ -1,0 +1,2 @@
+/net/fantasia/home/zhanxw/mycode/mathExpression/software/mathpresso/Build/CMakeFiles/evaluator.dir
+/net/fantasia/home/zhanxw/mycode/mathExpression/software/mathpresso/Build/CMakeFiles/exptest.dir
