@@ -1,6 +1,6 @@
-#CFLAGS = -g -O0 -I./libgmp/include -DINCLUDE_LIBSTATGEN
-CFLAGS = -O2 -I./libgmp/include -DINCLUDE_LIBSTATGEN
-all: main cotmp
+CFLAGS = -g -O0 -I./libgmp/include -DINCLUDE_LIBSTATGEN
+#CFLAGS = -O2 -I./libgmp/include -DINCLUDE_LIBSTATGEN
+all: main comp
 ExactLogisticRegression.o: ExactLogisticRegression.cpp ExactLogisticRegression.h
 	g++ $(CFLAGS) -c $< -Ilibsrc
 main.o:	main.cpp

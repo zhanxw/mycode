@@ -18,6 +18,11 @@ void test_main(); // all test codes goes here;
 
 int main(int argc, char *argv[])
 {
+    if (argc != 3) {
+        fprintf(stderr, "Usage: \n");
+        fprintf(stderr, " ./main X Y X_index \n");
+        fprintf(stderr, " Y~X [-X_index] + X[X_index], test X[X_index] \n");
+    }
     ExactLogisticRegression elr;
     Matrix X;
     Vector Y;
@@ -28,18 +33,26 @@ int main(int argc, char *argv[])
     // String Yinput = "eg1Y";
     // String Xinput = "EX1";
     // String Yinput = "EY1";
-    String Xinput = "ExampleX";
-    String Yinput = "ExampleY";
+    // String Xinput = "ExampleX";
+    // String Yinput = "ExampleY";
+    String Xinput = argv[1];
+    String Yinput = argv[2];
+    int index = atoi(argv[3]) - 1;
+
 
     if (loadMatrix(X,Xinput) || loadVector(Y, Yinput)) {
         fprintf(stderr, "Data loading problem!\n");
         exit(1);
     }
 
+    if (index < 0 || index >= X.cols) {
+        fprintf(stderr, "Invalid index...\n");
+        exit(1);
+    }
     time_t now  = time(0);
     printf("Start analysis at %s \n", ctime(&now));
 
-    if ( elr.FitModel(X, Y, 100, 1) ) {
+    if ( elr.FitModel(X, Y, 100, index) ) {
         std::cout << "fit all right" <<std::endl;
     } else {
         std::cout << "fit failed" <<std::endl;

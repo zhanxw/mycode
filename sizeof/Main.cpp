@@ -21,6 +21,8 @@ int main(int argc, char *argv[])
     PRINT_SIZEOF(float);
     PRINT_SIZEOF(double);
 
+    PRINT_SIZEOF(unsigned);
+    PRINT_SIZEOF(bool);
 
     return 0;
 }

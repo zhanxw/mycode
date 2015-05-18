@@ -32,6 +32,7 @@ double checkExpression(const char* formular, double gq, double dp) {
 
     PyObject* ret = PyRun_String(formular, Py_eval_input, main_dict, main_dict);
     if (ret == NULL) {
+        Py_XDECREF(ret);
         PyErr_Clear();
         return -1.;
     };
@@ -44,6 +45,13 @@ double checkExpression(const char* formular, double gq, double dp) {
     } else if (PyBool_Check(ret)) {
         res = ret == Py_True;
     }
+    // fprintf(stderr, "begin decref\n");
+    Py_XDECREF(ret);
+    // fprintf(stderr, "done ret\n");
+    // Py_XDECREF(main_dict); // cannot do this as multiple import will
+    // fprintf(stderr, "done main dict\n");
+    // Py_XDECREF(main_module);
+    // fprintf(stderr, "done main module\n");
     return res;
 };
 
